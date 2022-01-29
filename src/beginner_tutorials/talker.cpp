@@ -19,7 +19,7 @@ int main(int argc, char **argv)
    * 
    * This node is named 'slimshady'
    */
-  ros::init(argc, argv, "slimshady");
+  ros::init(argc, argv, "talker");
 
   
   ros::NodeHandle n;
@@ -27,7 +27,7 @@ int main(int argc, char **argv)
   /**
    * Call advertise to signal our desire to publish
    */
-  ros::Publisher chatter_pub = n.advertise<std_msgs::String>("standing up", 1000);
+  ros::Publisher chatter_pub = n.advertise<std_msgs::String>("standingup", 1000);
 
   ros::Rate loop_rate(10); // publish at 10 hz
 
