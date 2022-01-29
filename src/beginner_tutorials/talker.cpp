@@ -27,7 +27,7 @@ int main(int argc, char **argv)
   /**
    * Call advertise to signal our desire to publish
    */
-  ros::Publisher chatter_pub = n.advertise<std_msgs::String>("standingup", 1000);
+  ros::Publisher chatter_pub = n.advertise<std_msgs::String>("chatter", 100);
 
   ros::Rate loop_rate(1); // publish at 1 hz
 

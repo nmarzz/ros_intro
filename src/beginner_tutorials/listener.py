@@ -10,8 +10,8 @@ def listener():
     # Anonymous creates this node with a unique name 
     rospy.init_node('listener', anonymous=True)
 
-    # subscribe to the slimshady channel
-    rospy.Subscriber("slimshady", String, callback)
+    # subscribe to the chatter channel
+    rospy.Subscriber("chatter", String, callback)
 
     # spin() simply keeps python from exiting until this node is stopped
     rospy.spin()
