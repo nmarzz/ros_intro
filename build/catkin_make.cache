@@ -1,2 +1,2 @@
-
+beginner_tutorials
 -DCATKIN_DEVEL_PREFIX=/home/noah/ros_intro/devel -DCMAKE_INSTALL_PREFIX=/home/noah/ros_intro/install -G Unix Makefiles

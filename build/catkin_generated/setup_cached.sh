@@ -8,6 +8,7 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/noah/ros_intro/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/noah/ros_intro/devel/lib:$LD_LIBRARY_PATH"
 export PWD='/home/noah/ros_intro/build'
 export ROSLISP_PACKAGE_DIRECTORIES='/home/noah/ros_intro/devel/share/common-lisp'
 export ROS_PACKAGE_PATH="/home/noah/ros_intro/src:$ROS_PACKAGE_PATH"
