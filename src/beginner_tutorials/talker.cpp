@@ -27,7 +27,7 @@ int main(int argc, char **argv)
   /**
    * Call advertise to signal our desire to publish
    */
-  ros::Publisher chatter_pub = n.advertise<std_msgs::String>("chatter", 100);
+  ros::Publisher chatter_pub = n.advertise<std_msgs::String>("slimshady", 100);
 
   ros::Rate loop_rate(1); // publish at 1 hz
 
@@ -43,7 +43,7 @@ int main(int argc, char **argv)
     std_msgs::String msg;
 
     std::stringstream ss;
-    ss << "this is I :" << count;
+    ss << "I am standing up:" << count;
     msg.data = ss.str();
 
     ROS_INFO("%s", msg.data.c_str());
