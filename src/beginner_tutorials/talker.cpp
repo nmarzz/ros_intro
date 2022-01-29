@@ -17,7 +17,7 @@ int main(int argc, char **argv)
    *
    * Need to call ros::inti before using another aspect of ROS. 
    * 
-   * This node is named 'slimshady'
+   * This node is named 'talker'
    */
   ros::init(argc, argv, "talker");
 
