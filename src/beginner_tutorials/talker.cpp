@@ -29,7 +29,7 @@ int main(int argc, char **argv)
    */
   ros::Publisher chatter_pub = n.advertise<std_msgs::String>("standingup", 1000);
 
-  ros::Rate loop_rate(10); // publish at 10 hz
+  ros::Rate loop_rate(1); // publish at 1 hz
 
   /**
    * ros::ok allows us to SIGINT the program
